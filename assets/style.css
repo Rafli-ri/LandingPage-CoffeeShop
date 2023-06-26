@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400;1,700&family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(241, 246, 255, .6);
+}
+
+header {
+    display: inline;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding: 675px 0 0 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+.navbar-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.navbar-list {
+    margin-right: 7%;
+}
+
+.nav-logo {
+    margin-left: 8%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.link {
+    position: relative;
+    color: black;
+    display: inline;
+}
+
+.link:hover::before {
+    content: '';
+    position: absolute;
+    bottom: -.8rem;
+    width: 50%;
+    left: 25%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20%;
+}
+
+.active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -.8rem;
+    width: 50%;
+    left: 25%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20%;
+}
+
+.active-link {
+    position: relative;
+    color: black;
+}
+
+#home {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blog {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-main {
+    width: 100%;
+}
+
+.show-image {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+
+.img-show-click {
+    width: 70%;
+    margin: 15px 23px 0 0;
+    border: 10px solid white;
+    box-shadow: 0 4px 8px 0 rgba(118, 118, 118, 0.2);
+}
+
+.img-show-click:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.img-main {
+    box-shadow: 0px 1px 70px 0px rgba(166, 191, 232, 0.47);
+}
+
+.profile img {
+    width: 100%;
+}
+
+.profile-image {
+    border-radius: 50%;
+
+}
+
+.profile {
+    background-color: white;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0px 1px 70px 0px rgba(166, 191, 232, 0.47);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#menu {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu-head h1 {
+    font-size: 1.4rem;
+}
+
+.menu-head {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-head a {
+    margin-top: 25px;
+    font-weight: 500;
+    color: #00a2c6;
+}
+
+.menu-head a:hover {
+    color: salmon;
+}
+
+.img-card-menu {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-card-menu {
+    background-color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.content-card-menu:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19);
+}
+
+.click-beli {
+    padding: 10px 40px;
+    background-color: salmon;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: .9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.click-beli:hover {
+    cursor: pointer;
+    border: 1px solid salmon;
+    background-color: #fff;
+    color: salmon;
+}
+
+
+#testimoni {
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimoni h1 {
+    margin-top: 100px;
+}
+
+.card-testimoni {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    margin-right: 20px;
+    border-radius: 20px;
+
+}
+
+.card-testimoni:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19);
+}
+
+.card-testimoni q {
+    font-size: 1.3rem;
+}
+
+.container-testimoni p {
+    margin-top: -20px;
+}
+
+.container-testimoni {
+    display: flex;
+    flex-direction: row;
+}
+
+.label-profile {
+    padding: 20px;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-label {
+    margin: 7px 5px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 10px;
+    color: #7c7c7c;
+    border: 1px solid #7c7c7c;
+}
+
+.label {
+    margin: 7px 5px;
+    font-size: .7rem;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px 10px;
+
+}
+
+.btn-download {
+    color: white;
+    border: 1px solid white;
+    background-color: #00a2c6;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+.btn-download:hover {
+    background-color: white;
+    border: 1px solid #00a2c6;
+    color: #00a2c6;
+}
+
+.humberger {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.humberger .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    margin: 7px;
+    border-radius: 4px;
+
+}
+
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .testimoni {
+        height: 600px;
+    }
+
+    .container-testimoni {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-testimoni {
+        margin-top: 10px;
+    }
+
+    .profile img {
+        width: 40%;
+    }
+
+    aside {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 701px) {
+    .navbar-container {
+        padding: 15px;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 700px) {
+    .humberger {
+        display: none;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 992px) {
+    .show-image {
+        width: 44%;
+    }
+
+}
+
+@media (min-width: 280px) and (max-width: 500px) {
+    aside {
+        margin-top: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-container-menu {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
